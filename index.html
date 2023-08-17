@@ -98,6 +98,36 @@
       background-color: #42B0CD;
     }
 
+    .swiper-arrow-plano {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .swiper-arrow-plano .swiper-button-next,
+    .swiper-arrow-plano .swiper-button-prev {
+      position: relative;
+      top: initial;
+      margin: 0;
+      width: 40px;
+      height: 40px;
+      border: 2px solid #42B0CD;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: initial;
+      right: initial;
+    }
+
+    .swiper-arrow-plano .swiper-button-next:after, 
+    .swiper-arrow-plano .swiper-button-prev:after {
+      font-size: 20px;
+      color: #42B0CD;
+    }
+
     @media (min-width: 1024px) {
       .swiper-banner {
         left: 100px;
@@ -118,8 +148,8 @@
         <a href="">
           <img class="h-[59px]" src="./img/logo.svg" alt="" />
         </a>
-        <nav class="hidden lg:block">
-          <a href=""><p class="pt-2">NOSOTROS</p></a>
+        <nav>
+          <a href="./about.html"><p class="pt-3 pr-3">NOSOTROS</p></a>
         </nav>
       </div>
       <div class="flex items-center gap-20">
@@ -153,7 +183,7 @@
                   >
                     <div class="w-10/12 md:w-9/12 flex flex-col items-start">
                       <h2
-                        class="mb-6 text-white lg:text-[#2C261F] text-[50px] md:text-[70px] leading-none uppercase pt-2"
+                        class="mb-6 text-white lg:text-[#2C261F] text-[50px] md:text-[68px] leading-none uppercase pt-2"
                       >
                         VIVE con una
                         <span class="text-[#42B0CD] font-medium"
@@ -275,7 +305,7 @@
                   >
                     <div class="w-10/12 md:w-9/12 flex flex-col items-start">
                       <h2
-                        class="mb-6 text-white lg:text-[#2C261F] text-[50px] md:text-[70px] leading-none uppercase pt-2"
+                        class="mb-6 text-white lg:text-[#2C261F] text-[50px] md:text-[68px] leading-none uppercase pt-2"
                       >
                         VIVE en la
                         <span class="text-[#42B0CD] font-medium"
@@ -371,7 +401,7 @@
                   >
                     <div class="w-10/12 md:w-9/12 flex flex-col items-start">
                       <h2
-                        class="mb-6 text-white lg:text-[#2C261F] text-[50px] md:text-[70px] leading-none uppercase pt-2"
+                        class="mb-6 text-white lg:text-[#2C261F] text-[50px] md:text-[68px] leading-none uppercase pt-2"
                       >
                         Lorem ipsum
                         <span class="text-[#42B0CD] font-medium"
@@ -493,7 +523,7 @@
                   >
                     <div class="w-10/12 md:w-9/12 flex flex-col items-start">
                       <h2
-                        class="mb-6 text-white lg:text-[#2C261F] text-[50px] md:text-[70px] leading-none uppercase pt-2"
+                        class="mb-6 text-white lg:text-[#2C261F] text-[50px] md:text-[68px] leading-none uppercase pt-2"
                       >
                         sit amet
                         <span class="text-[#42B0CD] font-medium"
@@ -768,7 +798,7 @@
       </div>
     </section>
 
-    <section class="bg-[#2C261F] py-20">
+    <section class="bg-[#2C261F] py-20 md:sticky md:top-0">
       <div id="myTabs" class="overflow-hidden">
         <div
           class="px-4 lg:px-[100px] flex items-center justify-between flex-col lg:flex-row gap-5 mb-10"
@@ -863,7 +893,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="relative bg-[#F1F1F1]">
       <div class="flex flex-col lg:flex-row items-start">
         <div class="w-full lg:w-4/12">
           <div class="px-4 pb-10 lg:pb-0 lg:pl-20 pt-20 lg:pr-16">
@@ -937,12 +967,156 @@
       </div>
     </section>
 
-    <section class="bg-white py-20 px-4 lg:px-[100px]" id="form">
-      <div class="flex flex-col lg:flex-row gap-6 md:gap-0 items-center">
+    <section class="bg-white relative py-20 px-4 lg:px-[100px]" id="form">
+      <div class="flex flex-col lg:flex-row gap-10 lg:gap-0 items-center">
         <div class="w-full lg:w-6/12">
-          <p>slider</p>
+          <div class="swiper mySwiperDepa">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bg-[#F1F1F1] gap-10 md:gap-0 relative md:min-h-[584px] flex-col items-center flex justify-between p-4">
+                  <div>
+                    <img class="md:h-[428px]" src="./img/plano-1.png" alt="">
+                  </div>
+                  <div class="absolute bottom-[110px] right-4 flex items-center gap-2">
+                    <button class="w-10 h-10 flex items-center justify-center border-2 border-[#42B0CD]">
+                      <i class="icon-download text-[#42B0CD] text-xl"></i>
+                    </button>
+                    <button class="w-10 h-10 flex items-center justify-center border-2 border-[#42B0CD]">
+                      <i class="icon-share text-[#42B0CD] text-xl"></i>
+                    </button>
+                    <button class="w-10 h-10 flex items-center justify-center border-2 border-[#42B0CD]">
+                      <i class="icon-download text-[#42B0CD] text-xl"></i>
+                    </button>
+                  </div>
+                  <div class="bg-white flex items-center gap-2 lg:gap-0 lg:justify-between h-[78px] w-full px-4">
+                    <p class="text-[#42B0CD] text-sm font-medium lg:text-2xl pt-2 lg:pt-3 whitespace-nowrap">TIPO 1</p>
+                    <div class="items-center gap-3 hidden lg:flex">
+                      <i class="icon-dormitorio text-4xl"></i>
+                      <div class="pt-2">
+                        <p class="text-[10px]">DORMITORIOS</p>
+                        <p class="text-xs font-medium">2</p>
+                      </div>
+                    </div>
+                    <div class="items-center gap-3 hidden lg:flex">
+                      <div class="pt-2">
+                        <div class="flex justify-between items-center gap-2"> 
+                          <p class="text-[11px]">ÁREA TECHADA APROX.</p>
+                          <p class="text-xs font-medium">52.70 m2</p>
+                        </div>
+                        <div class="flex justify-between items-center gap-2"> 
+                          <p class="text-[11px]">ÁREA SIN TECHADA APROX.</p>
+                          <p class="text-xs font-medium">-- m2</p>
+                        </div>
+                        <div class="flex justify-between items-center gap-2"> 
+                          <p class="text-[11px]">ÁREA OCUPADA APROX.</p>
+                          <p class="text-xs font-medium">52.70 m2</p>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="text-[#2C261F] text-sm lg:hidden pt-2">1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA, LAVANDERÍA.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-[#F1F1F1] relative gap-10 md:gap-0 md:min-h-[584px] flex-col items-center flex justify-between p-4">
+                  <div>
+                    <img class="md:h-[428px]" src="./img/plano-2.png" alt="">
+                  </div>
+                  <div class="absolute bottom-[110px] right-4 flex items-center gap-2">
+                    <button class="w-10 h-10 flex items-center justify-center border-2 border-[#42B0CD]">
+                      <i class="icon-download text-[#42B0CD] text-xl"></i>
+                    </button>
+                    <button class="w-10 h-10 flex items-center justify-center border-2 border-[#42B0CD]">
+                      <i class="icon-share text-[#42B0CD] text-xl"></i>
+                    </button>
+                    <button class="w-10 h-10 flex items-center justify-center border-2 border-[#42B0CD]">
+                      <i class="icon-download text-[#42B0CD] text-xl"></i>
+                    </button>
+                  </div>
+                  <div class="bg-white flex items-center gap-2 lg:gap-0 lg:justify-between h-[78px] w-full px-4">
+                    <p class="text-[#42B0CD] text-sm font-medium lg:text-2xl pt-2 lg:pt-3 whitespace-nowrap">TIPO 2</p>
+                    <div class="items-center gap-3 hidden lg:flex">
+                      <i class="icon-dormitorio text-4xl"></i>
+                      <div class="pt-2">
+                        <p class="text-[10px]">DORMITORIOS</p>
+                        <p class="text-xs font-medium">1</p>
+                      </div>
+                    </div>
+                    <div class="items-center gap-3 hidden lg:flex">
+                      <i class="icon-area text-4xl"></i>
+                      <div class="pt-2">
+                        <div class="flex justify-between items-center gap-2"> 
+                          <p class="text-[11px]">ÁREA TECHADA APROX.</p>
+                          <p class="text-xs font-medium">52.70 m2</p>
+                        </div>
+                        <div class="flex justify-between items-center gap-2"> 
+                          <p class="text-[11px]">ÁREA SIN TECHADA APROX.</p>
+                          <p class="text-xs font-medium">-- m2</p>
+                        </div>
+                        <div class="flex justify-between items-center gap-2"> 
+                          <p class="text-[11px]">ÁREA OCUPADA APROX.</p>
+                          <p class="text-xs font-medium">52.70 m2</p>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="text-[#2C261F] text-sm lg:hidden pt-2">1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA, LAVANDERÍA.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-[#F1F1F1] relative gap-10 md:gap-0 md:min-h-[584px] flex-col items-center flex justify-between p-4">
+                  <div>
+                    <img class="md:h-[428px]" src="./img/plano-3.png" alt="">
+                  </div>
+                  <div class="absolute bottom-[110px] right-4 flex items-center gap-2">
+                    <button class="w-10 h-10 flex items-center justify-center border-2 border-[#42B0CD]">
+                      <i class="icon-download text-[#42B0CD] text-xl"></i>
+                    </button>
+                    <button class="w-10 h-10 flex items-center justify-center border-2 border-[#42B0CD]">
+                      <i class="icon-share text-[#42B0CD] text-xl"></i>
+                    </button>
+                    <button class="w-10 h-10 flex items-center justify-center border-2 border-[#42B0CD]">
+                      <i class="icon-download text-[#42B0CD] text-xl"></i>
+                    </button>
+                  </div>
+                  <div class="bg-white flex items-center gap-2 lg:gap-0 lg:justify-between h-[78px] w-full px-4">
+                    <p class="text-[#42B0CD] text-sm font-medium lg:text-2xl pt-2 lg:pt-3 whitespace-nowrap">TIPO 3</p>
+                    <div class="items-center gap-3 hidden lg:flex">
+                      <i class="icon-dormitorio text-4xl"></i>
+                      <div class="pt-2">
+                        <p class="text-[10px]">DORMITORIOS</p>
+                        <p class="text-xs font-medium">2</p>
+                      </div>
+                    </div>
+                    <div class="items-center gap-3 hidden lg:flex">
+                      <i class="icon-area text-4xl"></i>
+                      <div class="pt-2">
+                        <div class="flex justify-between items-center gap-2"> 
+                          <p class="text-[11px]">ÁREA TECHADA APROX.</p>
+                          <p class="text-xs font-medium">52.70 m2</p>
+                        </div>
+                        <div class="flex justify-between items-center gap-2"> 
+                          <p class="text-[11px]">ÁREA SIN TECHADA APROX.</p>
+                          <p class="text-xs font-medium">-- m2</p>
+                        </div>
+                        <div class="flex justify-between items-center gap-2"> 
+                          <p class="text-[11px]">ÁREA OCUPADA APROX.</p>
+                          <p class="text-xs font-medium">52.70 m2</p>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="text-[#2C261F] text-sm lg:hidden pt-2">1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA, LAVANDERÍA.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-arrow-plano">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
         </div>
-        <div class="w-full lg:w-6/12">
+        <div class="w-full lg:w-6/12 lg:pl-[100px]">
           <div class="pb-5">
             <h2 class="text-[20px] md:text-[26px] text-left">
               Cotiza aquí tu <span class="font-medium">Nuevo depa</span>
@@ -1061,7 +1235,7 @@
       </div>
     </section>
 
-    <section class="py-20 px-4 lg:px-[100px]">
+    <section class="py-20 px-4 relative bg-[#F1F1F1] lg:px-[100px]">
       <div>
         <h2 class="text-[20px] md:text-[26px] text-left pb-5">
           Estamos para <span class="font-medium">Asesorarte</span>
@@ -1129,7 +1303,7 @@
       </div>
     </section>
 
-    <footer class="bg-[#2C261F] pt-20 px-4 lg:px-[100px]">
+    <footer class="relative bg-[#2C261F] pt-20 px-4 lg:px-[100px]">
       <div class="grid grid-cols-10 md:grid-cols-12 gap-5 items-start border-b border-[#56514C] pb-12">
         <div class="col-span-10 md:col-span-6 lg:col-span-3">
           <img class="h-20 mx-auto md:mx-0" src="./img/logo-white.svg" alt="">
@@ -1193,6 +1367,13 @@
           slidesPerView: 3,
           spaceBetween: 30,
         },
+      },
+    });
+
+    var swiper = new Swiper(".mySwiperDepa", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
 
