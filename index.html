@@ -9,6 +9,7 @@
     />
     <link href="font/font.css" rel="stylesheet" />
     <link href="icons/style.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -126,6 +127,15 @@
     .swiper-arrow-plano .swiper-button-prev:after {
       font-size: 20px;
       color: #42B0CD;
+    }
+
+    select {
+      background-image: url(./img/ico-select.svg);
+      background-size: 30px;
+      background-repeat: no-repeat;
+      background-position: right center;
+      appearance: none;
+      cursor: pointer;
     }
 
     @media (min-width: 1024px) {
@@ -628,7 +638,7 @@
             alt=""
           />
         </div>
-        <div class="lg:w-6/12 flex items-start flex-col px-4 lg:px-[100px]">
+        <div class="lg:w-6/12 flex items-start flex-col px-4 lg:px-[100px]" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
           <div class="pb-3">
             <p class="text-[#F09B3C] uppercase pt-2">Acerca del proyecto</p>
             <h2 class="text-[#2C261F] text-[26px]">
@@ -682,6 +692,7 @@
         >
           <h2
             class="text-[20px] md:text-[26px] text-center md:text-left pb-8 md:pb-0"
+            data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500"
           >
             Características<br />del <span class="font-medium">Proyecto</span>
           </h2>
@@ -706,6 +717,7 @@
         >
           <div
             class="flex items-center justify-center gap-[10px] md:gap-[30px] flex-col md:pb-20 w-full lg:w-fit"
+            data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500"
           >
             <div
               class="bg-[#42B0CD] w-10/12 md:w-full lg:w-[350px] h-[98px] p-4 flex items-center gap-4"
@@ -751,6 +763,7 @@
           </div>
           <div
             class="flex items-center justify-center gap-[10px] md:gap-[30px] flex-col md:pb-20 w-full lg:w-fit"
+            data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500"
           >
             <div
               class="bg-[#42B0CD] w-10/12 md:w-full lg:w-[350px] h-[98px] p-4 flex items-center gap-4"
@@ -799,11 +812,11 @@
     </section>
 
     <section class="bg-[#2C261F] py-20 md:sticky md:top-0">
-      <div id="myTabs" class="overflow-hidden">
+      <div id="myTabs">
         <div
           class="px-4 lg:px-[100px] flex items-center justify-between flex-col lg:flex-row gap-5 mb-10"
         >
-          <h2 class="text-[20px] md:text-[26px] text-white">
+          <h2 class="text-[20px] md:text-[26px] text-white" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
             <span class="font-medium">Ambientes</span> ideales para ti
           </h2>
           <div class="flex items-center w-full md:w-[400px] bg-[#0000002b]">
@@ -896,7 +909,7 @@
     <section class="relative bg-[#F1F1F1]">
       <div class="flex flex-col lg:flex-row items-start">
         <div class="w-full lg:w-4/12">
-          <div class="px-4 pb-10 lg:pb-0 lg:pl-20 pt-20 lg:pr-16">
+          <div class="px-4 pb-10 lg:pb-0 lg:pl-20 pt-20 lg:pr-16" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
             <h2 class="text-[20px] md:text-[26px] text-left pb-6 md:pb-8">
               Ubicación del <span class="font-medium">Proyecto</span>
             </h2>
@@ -1117,7 +1130,7 @@
           </div>
         </div>
         <div class="w-full lg:w-6/12 lg:pl-[100px]">
-          <div class="pb-5">
+          <div class="pb-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
             <h2 class="text-[20px] md:text-[26px] text-left">
               Cotiza aquí tu <span class="font-medium">Nuevo depa</span>
             </h2>
@@ -1127,19 +1140,28 @@
           </div>
           <form class="grid grid-cols-2 gap-2" action="">
             <div class="col-span-2">
-              <div class="cursor-pointer border font-light border-[#8B8986] px-3 h-[50px] font-sans text-sm w-full text-[#2C261F] flex items-center">
-                <div class="flex flex-col w-[95%] pr-1">
+              <div class="cursor-pointer border font-light border-[#8B8986] pl-3 h-[50px] font-sans text-sm w-full text-[#2C261F] flex items-center justify-between relative">
+                <div class="flex flex-col max-w-[95%] pr-1">
                   <span class="text-[10px]">ELIGE UN MODELO DE DEPARTAMENTO</span>
                   <span class="text-smz truncate">1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA, 1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA</span>
                 </div>
-                <div class="min-w-[5%]">
-                  <i>icono</i>
+                <div class="pl-2">
+                  <img class="min-w-[30px]" src="./img/ico-select.svg" alt="">
+                </div>
+                <div class="absolute hidden overflow-auto w-full border border-[#8B8986] shadow-lg left-0 right-0 bg-white top-[50px] max-h-[200px] p-2">
+                  <p class="text-smz p-2 border-b border-[#D9D9D9] hover:bg-[#F1F1F1]">1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA, 1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA</p>
+                  <p class="text-smz p-2 border-b border-[#D9D9D9] hover:bg-[#F1F1F1]">1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA, 1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA</p>
+                  <p class="text-smz p-2 border-b border-[#D9D9D9] hover:bg-[#F1F1F1]">1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA, 1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA</p>
+                  <p class="text-smz p-2 border-b border-[#D9D9D9] hover:bg-[#F1F1F1]">1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA, 1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA</p>
+                  <p class="text-smz p-2 border-b border-[#D9D9D9] hover:bg-[#F1F1F1]">1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA, 1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA</p>
+                  <p class="text-smz p-2 border-b border-[#D9D9D9] hover:bg-[#F1F1F1]">1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA, 1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA</p>
+                  <p class="text-smz p-2 border-b border-[#D9D9D9] hover:bg-[#F1F1F1]">1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA, 1D + ESTAR, SALA-COMEDOR, BALCÓN, 1.5 SSHH, COCINA</p>
                 </div>
               </div>
             </div>
             <div>
               <input
-                class="border font-light border-[#8B8986] px-3 h-[50px] font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                class="border font-light border-[#8B8986] px-3 h-[52px] font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
                 type="text"
                 name="name"
                 id="name"
@@ -1236,7 +1258,7 @@
     </section>
 
     <section class="py-20 px-4 relative bg-[#F1F1F1] lg:px-[100px]">
-      <div>
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
         <h2 class="text-[20px] md:text-[26px] text-left pb-5">
           Estamos para <span class="font-medium">Asesorarte</span>
         </h2>
@@ -1338,7 +1360,7 @@
         <div class="flex flex-col lg:flex-row items-center gap-2 lg:gap-10">
           <a class="text-white underline pt-2 text-sm" href="">Términos y Condiciones</a>
           <a class="text-white underline pt-2 text-sm" href="">Políticas de Privacidad</a>
-          <a class="text-white underline pt-2 text-sm" href="">Libro de Reclamaciones</a>
+          <a class="text-white underline pt-2 text-sm" href="./reclamaciones.html">Libro de Reclamaciones</a>
         </div>
         <p class="text-white pt-2 text-sm">2023 © Todos los derechos reservados</p>
       </div>
@@ -1346,8 +1368,11 @@
   </body>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>
+    AOS.init();
+    
     var swiper = new Swiper(".mySwiper", {
       pagination: {
         el: ".swiper-pagination",

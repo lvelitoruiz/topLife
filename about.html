@@ -9,6 +9,7 @@
     />
     <link href="font/font.css" rel="stylesheet" />
     <link href="icons/style.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -50,7 +51,7 @@
       </div>
     </header>
 
-    <section class="bg-white pb-0 pt-20 lg:py-20 px-4 lg:px-[100px]">
+    <section class="bg-white pb-0 pt-20 lg:py-20 px-4 lg:px-[100px]" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
       <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between">
         <div class="lg:w-6/12">
           <h2 class="text-[#2C261F] text-[30px] md:text-[40px] font-semibold leading-tight">Construimos hogares con personalidad para que vivas una vida ideal y en armonía.</h2>
@@ -78,7 +79,7 @@
             alt=""
           />
         </div>
-        <div class="lg:w-8/12 flex items-start flex-col pt-10 lg:pt-0 px-4 lg:px-[100px]">
+        <div class="lg:w-8/12 flex items-start flex-col pt-10 lg:pt-0 px-4 lg:px-[100px]" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
           <div class="pb-3">
             <h2 class="text-[#2C261F] text-[26px]">
               Acerca de <span class="font-medium">Nostros</span>  
@@ -125,7 +126,7 @@
     </section>
 
     <section class="relative bg-[#F1F1F1] py-20 px-4 lg:px-[100px]">
-      <div class="pb-5">
+      <div class="pb-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
         <h2 class="text-[#2C261F] text-[26px] leading-tight">
           Quiénes <span class="font-medium">somos</span>  
         </h2>
@@ -161,7 +162,7 @@
     </section>
 
     <section class="relative bg-white py-20 px-4 lg:px-[100px]">
-      <div class="pb-5">
+      <div class="pb-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
         <h2 class="text-[#2C261F] text-[26px] leading-tight">
           Conoce lo que <span class="font-medium">nos hace diferentes</span>  
         </h2>
@@ -197,7 +198,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col pt-[72px]">
+      <div class="flex flex-col pt-[72px]" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
         <div>
           <h2 class="text-[#2C261F] text-[26px] mb-5 leading-tight text-center lg:text-start">
             Ellos nos <span class="font-medium">Respaldan</span>  
@@ -249,10 +250,16 @@
         <div class="flex flex-col lg:flex-row items-center gap-2 lg:gap-10">
           <a class="text-white underline pt-2 text-sm" href="">Términos y Condiciones</a>
           <a class="text-white underline pt-2 text-sm" href="">Políticas de Privacidad</a>
-          <a class="text-white underline pt-2 text-sm" href="">Libro de Reclamaciones</a>
+          <a class="text-white underline pt-2 text-sm" href="./reclamaciones.html">Libro de Reclamaciones</a>
         </div>
         <p class="text-white pt-2 text-sm">2023 © Todos los derechos reservados</p>
       </div>
     </footer>
   </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </html>

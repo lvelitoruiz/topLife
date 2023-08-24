@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link href="font/font.css" rel="stylesheet" />
+    <link href="icons/style.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <style>
+    body {
+      font-family: "Gotham";
+    }
+
+    select {
+      background-image: url(./img/ico-select.svg);
+      background-size: 30px;
+      background-repeat: no-repeat;
+      background-position: right center;
+      appearance: none;
+      cursor: pointer;
+    }
+  </style>
+
+  <body class="bg-white">
+    <header
+      class="flex sticky top-0 items-center justify-between px-4 bg-white lg:px-[100px] h-[80px] z-10"
+    >
+      <div class="flex items-center gap-[120px]">
+        <a href="./index.html">
+          <img class="h-[59px]" src="./img/logo.svg" alt="" />
+        </a>
+        <nav>
+          <a href="./about.html"><p class="pt-3 pr-3">NOSOTROS</p></a>
+        </nav>
+      </div>
+      <div class="flex items-center gap-20">
+        <a class="flex items-center justify-center gap-2" href="">
+          <span
+            class="w-[30px] h-[30px] flex items-center justify-center bg-[#42B0CD] rounded-full"
+          >
+            <i class="icon-phone text-white"></i>
+          </span>
+          <span
+            class="nro text-[#2C261F] hidden lg:block font-medium pt-2 inline-block"
+            >415 - 1415</span
+          >
+        </a>
+        <a
+          class="font-medium h-[50px] hidden lg:flex bg-[#42B0CD] text-white px-5 uppercase items-center shadow-[0_10px_20px_0_rgba(66,176,205,0.20)]"
+          href="#form"
+          ><span class="pt-2 inline-block">¡Cotizar ahora!</span></a
+        >
+      </div>
+    </header>
+
+    <section>
+      <div class="container mx-auto py-10 lg:py-28 px-4 lg:px-0">
+        <div class="text-center pb-10">
+          <h2 class="text-[#2C261F] text-[30px] mb-1 leading-tight text-center">
+            Libro de reclamaciones
+          </h2>
+          <p class="text-[#9B8F86] lg:w-6/12 mx-auto">
+            Conforme a lo establecido en el Código de Protección y Defensa del
+            Consumidor, esta institución cuenta con un libro de reclamaciones a
+            su disposición
+          </p>
+        </div>
+
+        <div class="lg:w-6/12 mx-auto">
+          <div class="grid grid-cols-10 md:grid-cols-6 gap-3 items-center">
+            <div class="col-span-10 md:col-span-6 mb-5">
+              <div>
+                <p class="font-semibold text-sm mb-5 text-[#2C261F]">
+                  ANTES DE EMPEZAR, INDÍCANOS EL LUGAR EN EL QUE SE DIERON LOS
+                  SUCESOS DEL RECLAMO:
+                </p>
+                <div class="mb-2">
+                  <p class="text-xs text-[#2C261F]">ESTABLECIMIENTO</p>
+                  <select
+                    class="border font-light border-[#8B8986] px-3 h-[50px] font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                    name=""
+                    id=""
+                  >
+                    <option value="">Seleccione</option>
+                    <option value="">DNI</option>
+                    <option value="">CE</option>
+                  </select>
+                </div>
+              </div>
+              <p class="text-xs text-[#9B8F86]">
+                Nota: Si la queja o reclamo se relaciona con un proyecto
+                entregado, consignar a la oficina principal.
+              </p>
+            </div>
+            <div class="col-span-10 md:col-span-6">
+              <p class="text-sm text-[#F09B3C]">
+                1. Identificación del consumidor reclamante
+              </p>
+            </div>
+            <div class="col-span-10 md:col-span-3">
+              <input
+                class="border font-light border-[#8B8986] px-3 h-[52px] font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="MONBRES*"
+              />
+            </div>
+            <div class="col-span-10 md:col-span-3">
+              <input
+                class="border font-light border-[#8B8986] px-3 h-[52px] font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="APELLIDOS*"
+              />
+            </div>
+            <div class="col-span-10 md:col-span-3">
+              <input
+                class="border font-light border-[#8B8986] px-3 h-[52px] font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="CORREO ELECTRÓNICO*"
+              />
+            </div>
+            <div class="col-span-10 md:col-span-3">
+              <input
+                class="border font-light border-[#8B8986] px-3 h-[52px] font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="TELÉFONO/CELULAR*"
+              />
+            </div>
+            <div class="col-span-10 md:col-span-3">
+              <select
+                class="border font-light border-[#8B8986] px-3 h-[50px] font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                name=""
+                id=""
+              >
+                <option value="">TIPO DOC.</option>
+                <option value="">DNI</option>
+                <option value="">CE</option>
+              </select>
+            </div>
+            <div class="col-span-10 md:col-span-3">
+              <input
+                class="border font-light border-[#8B8986] px-3 h-[52px] font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Nº DE DOCUMENTO*"
+              />
+            </div>
+            <div class="col-span-10 md:col-span-3">
+              <select
+                class="border font-light border-[#8B8986] px-3 h-[50px] font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                name=""
+                id=""
+              >
+                <option value="">DEPARTAMENTO</option>
+                <option value="">DNI</option>
+                <option value="">CE</option>
+              </select>
+            </div>
+            <div class="col-span-10 md:col-span-3">
+              <select
+                class="border font-light border-[#8B8986] px-3 h-[50px] font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                name=""
+                id=""
+              >
+                <option value="">PROVINCIA</option>
+                <option value="">DNI</option>
+                <option value="">CE</option>
+              </select>
+            </div>
+            <div class="col-span-10 md:col-span-3">
+              <select
+                class="border font-light border-[#8B8986] px-3 h-[50px] font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                name=""
+                id=""
+              >
+                <option value="">DISTRITO</option>
+                <option value="">DNI</option>
+                <option value="">CE</option>
+              </select>
+            </div>
+            <div class="col-span-10 md:col-span-3">
+              <input
+                class="border font-light border-[#8B8986] px-3 h-[52px] font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="DIRECCIÓN*"
+              />
+            </div>
+            <div class="col-span-10 md:col-span-3">
+              <input
+                class="border font-light border-[#8B8986] px-3 h-[52px] font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="NOMBRE DEL TUTOR*"
+              />
+            </div>
+            <div class="col-span-10 md:col-span-3">
+              <input
+                class="border font-light border-[#8B8986] px-3 h-[52px] font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="APELLIDOS DEL TUTOR*"
+              />
+            </div>
+            <div class="col-span-10 md:col-span-3">
+              <select
+                class="border font-light border-[#8B8986] px-3 h-[50px] font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                name=""
+                id=""
+              >
+                <option value="">TIPO DOC.</option>
+                <option value="">DNI</option>
+                <option value="">CE</option>
+              </select>
+            </div>
+            <div class="col-span-10 md:col-span-3">
+              <input
+                class="border font-light border-[#8B8986] px-3 h-[52px] font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Nº DE DOCUMENTO*"
+              />
+            </div>
+            <div class="col-span-10 md:col-span-3">
+              <p class="text-xs text-[#9B8F86]">
+                *Esto aplica si el reclamante es menor de edad
+              </p>
+            </div>
+            <div class="col-span-10 md:col-span-6 pt-5">
+              <p class="text-sm text-[#F09B3C]">
+                2. Identificación del bien contratado
+              </p>
+            </div>
+            <div class="col-span-10 md:col-span-6">
+              <div class="flex gap-5 items-center">
+                <div class="flex items-center">
+                  <input
+                    id="default-radio-1"
+                    type="radio"
+                    value=""
+                    name="default-radio"
+                    class="w-4 h-4 text-[#42B0CD] bg-[#42B0CD] border-[#42B0CD] focus:ring-[#42B0CD]"
+                  />
+                  <label for="default-radio-1" class="ml-2 text-sm pt-[10px]"
+                    >PROYECTO</label
+                  >
+                </div>
+                <div class="flex items-center">
+                  <input
+                    checked
+                    id="default-radio-2"
+                    type="radio"
+                    value=""
+                    name="default-radio"
+                    class="w-4 h-4 text-[#42B0CD] bg-[#42B0CD] border-[#42B0CD] focus:ring-[#42B0CD]"
+                  />
+                  <label for="default-radio-2" class="ml-2 text-sm pt-[10px]"
+                    >SERVICIO</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-span-10 md:col-span-6">
+              <textarea
+                class="border font-light border-[#8B8986] p-3 font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                name=""
+                id=""
+                cols="30"
+                rows="4"
+                placeholder="MENSAJE"
+              ></textarea>
+            </div>
+            <div class="col-span-10 md:col-span-6 pt-5">
+              <p class="text-sm text-[#F09B3C]">
+                3. Detalle de la Reclamación y Pedido del Consumidor
+              </p>
+            </div>
+            <div class="col-span-10 md:col-span-6">
+              <div class="flex gap-5 items-center">
+                <div class="flex items-center">
+                  <input
+                    id="default-radio-3"
+                    type="radio"
+                    value=""
+                    name="default-radio"
+                    class="w-4 h-4 text-[#42B0CD] bg-[#42B0CD] border-[#42B0CD] focus:ring-[#42B0CD]"
+                  />
+                  <label for="default-radio-3" class="ml-2 text-sm pt-[10px]"
+                    >QUEJA</label
+                  >
+                </div>
+                <div class="flex items-center">
+                  <input
+                    checked
+                    id="default-radio-4"
+                    type="radio"
+                    value=""
+                    name="default-radio"
+                    class="w-4 h-4 text-[#42B0CD] bg-[#42B0CD] border-[#42B0CD] focus:ring-[#42B0CD]"
+                  />
+                  <label for="default-radio-4" class="ml-2 text-sm pt-[10px]"
+                    >RECLAMO</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-span-10 md:col-span-6">
+              <p class="text-xs text-[#9B8F86]">
+                *Reclamo: Disconformidad relacionada a los proyectos o servicios
+              </p>
+              <p class="text-xs text-[#9B8F86]">
+                *Queja: Disconformidad no relacionada a los proyectos o
+                servicios;o, malestar o descontento respecto a la atención al
+                público.
+              </p>
+            </div>
+            <div class="col-span-10 md:col-span-6">
+              <textarea
+                class="border font-light border-[#8B8986] p-3 font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                name=""
+                id=""
+                cols="30"
+                rows="4"
+                placeholder="DETALLE*"
+              ></textarea>
+            </div>
+            <div class="col-span-10 md:col-span-6">
+              <textarea
+                class="border font-light border-[#8B8986] p-3 font-sans text-sm w-full focus:border-[#42B0CD] placeholder:text-[#9B8F86] text-[#2C261F] focus:outline-none"
+                name=""
+                id=""
+                cols="30"
+                rows="4"
+                placeholder="PEDIDO*"
+              ></textarea>
+            </div>
+            <div class="col-span-10 md:col-span-6">
+              <div class="flex items-center justify-center w-full">
+                <label
+                  for="dropzone-file"
+                  class="flex flex-col items-center justify-center w-full h-[150px] border border-[#8B8986] border-dashed rounded-lg cursor-pointer bg-[#F1F1F1]"
+                >
+                  <div
+                    class="flex flex-col items-center justify-center pt-5 pb-6"
+                  >
+                    <svg
+                      class="w-8 h-8 mb-4 text-[#9B8F86]"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 20 16"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
+                      />
+                    </svg>
+                    <p class="mb-2 text-sm text-[#9B8F86]">
+                      Adjuntar archivo
+                    </p>
+                    <p class="text-xs text-[#9B8F86]">
+                      (PDF, PPTX, WORD o imágenes JPG, PNG)
+                    </p>
+                  </div>
+                  <input id="dropzone-file" type="file" class="hidden" />
+                </label>
+              </div>
+            </div>
+            <div class="col-span-10 md:col-span-6 pt-5">
+              <p class="text-sm text-[#F09B3C]">
+                4. Observaciones y acciones adoptadas por el proveedor
+              </p>
+            </div>
+            <div class="col-span-10 md:col-span-6">
+              <p class="text-sm text-[#9B8F86]">Fecha de comunicación de la respuesta: Jueves, 04 de Octubre del 2018.</p>
+              <p class="text-sm text-[#9B8F86]">Descripción: “Al ser un reclamo virtual, su caso será derivado al área de atención al cliente, a fin de dar respuesta dentro del plazo legalmente establecido.</p>
+            </div>
+            <div class="col-span-10 md:col-span-6 pt-5">
+              <p class="text-sm text-[#F09B3C]">
+                5. Autorizo notificación del resultado del reclamo al correo consignado
+              </p>
+            </div>
+            <div class="col-span-10 md:col-span-6">
+              <div class="flex gap-5 items-center">
+                <div class="flex items-center">
+                  <input id="default-radio-5" type="radio" value="" name="default-radio" class="w-4 h-4 text-[#42B0CD] bg-[#42B0CD] border-[#42B0CD] focus:ring-[#42B0CD]">
+                  <label for="default-radio-5" class="ml-2 text-sm pt-[10px]">SI</label>
+                </div>
+                <div class="flex items-center">
+                  <input checked="" id="default-radio-6" type="radio" value="" name="default-radio" class="w-4 h-4 text-[#42B0CD] bg-[#42B0CD] border-[#42B0CD] focus:ring-[#42B0CD]">
+                  <label for="default-radio-6" class="ml-2 text-sm pt-[10px]">NO</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-10 md:col-span-6 mt-5">
+              <p class="text-xs text-[#eb323c]">(*) Campos obligatorios</p>
+              <div class="mt-5">
+                <p class="text-sm text-[#9B8F86]">* La formulación del reclamo no impide a la persona acudir a otras vías de solución de controversias ni es requisito previo.</p>
+                <p class="text-sm text-[#9B8F86]">* El proveedor deberá dar respuesta al reclamo en un plazo no mayor a (30) treinta días calendario, pudiendo ampliar el plazo hasta (30) treinta días más, previa comunicación al consumidor.</p>
+              </div>
+              <div class="flex gap-2 w-full my-5">
+                <input type="checkbox" id="some_id" class="relative peer flex items-center justify-center appearance-none w-5 h-5 border-2 border-[#42B0CD] rounded-sm bg-white checked:bg-[#42B0CD] checked:border-0">
+                <label class="pt-1 text-[#9B8F86] text-sm" for="some_id">He leído y acepto la Políticas de Privacidad de Datos</label>
+                <svg class="absolute w-[18px] h-4 hidden peer-checked:block text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <a class="font-medium h-[50px] bg-[#42B0CD] w-fit text-white px-10 uppercase flex items-center justify-center shadow-[0_10px_20px_0_rgba(66,176,205,0.20)]" href=""><span class="pt-2">ENVIAR</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="relative bg-[#2C261F] pt-20 px-4 lg:px-[100px]">
+      <div
+        class="grid grid-cols-10 md:grid-cols-12 gap-5 items-start border-b border-[#56514C] pb-12"
+      >
+        <div class="col-span-10 md:col-span-6 lg:col-span-3">
+          <img class="h-20 mx-auto md:mx-0" src="./img/logo-white.svg" alt="" />
+        </div>
+        <div class="col-span-10 md:col-span-6 lg:col-span-3 pt-2">
+          <h3 class="text-white text-xl mb-6 text-center md:text-start">
+            CONTACTANOS
+          </h3>
+          <div class="flex flex-col gap-2 text-center md:text-start">
+            <a class="text-white" href="">(01) 234- 1345</a>
+            <a class="text-white" href="">(+51) 223 345 467</a>
+            <a class="text-white" href="">ventas@toplife.com.pe</a>
+          </div>
+        </div>
+        <div class="col-span-10 md:col-span-6 lg:col-span-3 pt-2">
+          <h3 class="text-white text-xl mb-6 text-center md:text-start">
+            HORARIOS DE ATENCIÓN
+          </h3>
+          <div class="flex flex-col gap-2 text-center md:text-start">
+            <p class="text-white">L - D de 9:00 am a 9:00 pm</p>
+          </div>
+        </div>
+        <div class="col-span-10 md:col-span-6 lg:col-span-3 pt-2">
+          <h3 class="text-white text-xl mb-6 text-center md:text-start">
+            SIGUENOS
+          </h3>
+          <div class="flex gap-2 items-center justify-center md:justify-start">
+            <a class="bg-[#F1F1F1] w-[50px] h-[50px] rounded-full" href=""></a>
+            <a class="bg-[#F1F1F1] w-[50px] h-[50px] rounded-full" href=""></a>
+            <a class="bg-[#F1F1F1] w-[50px] h-[50px] rounded-full" href=""></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex items-center justify-center text-center py-6 px-4 lg:py-12 lg:px-10 border-b border-[#56514C]"
+      >
+        <p class="text-[#9B8F86] text-xs pt-2">
+          Todas las imágenes, planos, medidas y áreas, son referenciales por lo
+          que podrían sufrir cambios al momento de desarrollarse el proyecto,
+          asímismo los elementos decorativos, acabados y mobiliarios son
+          propuestas del departamento de diseño que no se incluyen en la oferta
+          comercial y no comprometen a la empresa inmobiliaria.
+        </p>
+      </div>
+      <div
+        class="flex flex-col gap-2 lg:flex-row items-center justify-between py-5"
+      >
+        <div class="flex flex-col lg:flex-row items-center gap-2 lg:gap-10">
+          <a class="text-white underline pt-2 text-sm" href=""
+            >Términos y Condiciones</a
+          >
+          <a class="text-white underline pt-2 text-sm" href=""
+            >Políticas de Privacidad</a
+          >
+          <a class="text-white underline pt-2 text-sm" href=""
+            >Libro de Reclamaciones</a
+          >
+        </div>
+        <p class="text-white pt-2 text-sm">
+          2023 © Todos los derechos reservados
+        </p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+</html>
